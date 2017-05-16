@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F0CFD9171ECAC3A500142705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9161ECAC3A500142705 /* main.m */; };
 		F0CFD91A1ECAC3A500142705 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9191ECAC3A500142705 /* AppDelegate.m */; };
-		F0CFD91D1ECAC3A500142705 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD91C1ECAC3A500142705 /* ViewController.m */; };
 		F0CFD9221ECAC3A500142705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CFD9211ECAC3A500142705 /* Assets.xcassets */; };
 		F0CFD9251ECAC3A500142705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0CFD9231ECAC3A500142705 /* LaunchScreen.storyboard */; };
 		F0CFD92E1ECAC44D00142705 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD92D1ECAC44D00142705 /* MainViewController.m */; };
@@ -78,6 +77,9 @@
 		F0CFD9FE1ECAD1D800142705 /* NSThread+performBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9B91ECAD1D800142705 /* NSThread+performBlock.m */; };
 		F0CFD9FF1ECAD1D800142705 /* TGAlib.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9BB1ECAD1D800142705 /* TGAlib.m */; };
 		F0CFDA001ECAD1D800142705 /* ZipUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9BF1ECAD1D800142705 /* ZipUtils.m */; };
+		F0CFDA031ECAEEF800142705 /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CFDA021ECAEEF800142705 /* Metal.framework */; };
+		F0CFDA051ECAEEFE00142705 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CFDA041ECAEEFE00142705 /* OpenGLES.framework */; };
+		F0CFDA071ECAF00800142705 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0CFDA061ECAF00800142705 /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,8 +87,6 @@
 		F0CFD9161ECAC3A500142705 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CFD9181ECAC3A500142705 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F0CFD9191ECAC3A500142705 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F0CFD91B1ECAC3A500142705 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		F0CFD91C1ECAC3A500142705 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		F0CFD9211ECAC3A500142705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0CFD9241ECAC3A500142705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0CFD9261ECAC3A500142705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -232,6 +232,9 @@
 		F0CFD9BD1ECAD1D800142705 /* utlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utlist.h; sourceTree = "<group>"; };
 		F0CFD9BE1ECAD1D800142705 /* ZipUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipUtils.h; sourceTree = "<group>"; };
 		F0CFD9BF1ECAD1D800142705 /* ZipUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZipUtils.m; sourceTree = "<group>"; };
+		F0CFDA021ECAEEF800142705 /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
+		F0CFDA041ECAEEFE00142705 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		F0CFDA061ECAF00800142705 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +242,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0CFDA071ECAF00800142705 /* libz.tbd in Frameworks */,
+				F0CFDA051ECAEEFE00142705 /* OpenGLES.framework in Frameworks */,
+				F0CFDA031ECAEEF800142705 /* Metal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +257,7 @@
 				F0CFD92F1ECAD1D800142705 /* cocos2d */,
 				F0CFD9141ECAC3A500142705 /* GravityDemo */,
 				F0CFD9131ECAC3A500142705 /* Products */,
+				F0CFDA011ECAEEF700142705 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,8 +274,6 @@
 			children = (
 				F0CFD9181ECAC3A500142705 /* AppDelegate.h */,
 				F0CFD9191ECAC3A500142705 /* AppDelegate.m */,
-				F0CFD91B1ECAC3A500142705 /* ViewController.h */,
-				F0CFD91C1ECAC3A500142705 /* ViewController.m */,
 				F0CFD9211ECAC3A500142705 /* Assets.xcassets */,
 				F0CFD9231ECAC3A500142705 /* LaunchScreen.storyboard */,
 				F0CFD9261ECAC3A500142705 /* Info.plist */,
@@ -466,6 +471,16 @@
 			path = Support;
 			sourceTree = "<group>";
 		};
+		F0CFDA011ECAEEF700142705 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0CFDA061ECAF00800142705 /* libz.tbd */,
+				F0CFDA041ECAEEFE00142705 /* OpenGLES.framework */,
+				F0CFDA021ECAEEF800142705 /* Metal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -544,7 +559,6 @@
 				F0CFD9F41ECAD1D800142705 /* CCWindow.m in Sources */,
 				F0CFD9D81ECAD1D800142705 /* CCRendererBasicTypes.m in Sources */,
 				F0CFD9FF1ECAD1D800142705 /* TGAlib.m in Sources */,
-				F0CFD91D1ECAC3A500142705 /* ViewController.m in Sources */,
 				F0CFD9C31ECAD1D800142705 /* CCActionInstant.m in Sources */,
 				F0CFD9FE1ECAD1D800142705 /* NSThread+performBlock.m in Sources */,
 				F0CFD9C71ECAD1D800142705 /* CCAnimation.m in Sources */,
@@ -718,6 +732,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2M4WW2KKY5;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"/cocos2d";
 				INFOPLIST_FILE = GravityDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobike.GravityDemo;
@@ -730,6 +745,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2M4WW2KKY5;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)\"/cocos2d";
 				INFOPLIST_FILE = GravityDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Mobike.GravityDemo;

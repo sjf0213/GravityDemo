@@ -26,7 +26,7 @@
 #include <metal_stdlib>
 #include <simd/simd.h>
 
-#include "CCRendererSharedTypes.h"
+#include "cocos2d/CCRendererSharedTypes.h"
 
 using namespace metal;
 
