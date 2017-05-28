@@ -53,6 +53,8 @@
 		F0B086301EDAF3990019D641 /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0B085FE1EDAF3990019D641 /* b2WeldJoint.cpp */; };
 		F0B086311EDAF3990019D641 /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0B086001EDAF3990019D641 /* b2WheelJoint.cpp */; };
 		F0B086321EDAF3990019D641 /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0B086031EDAF3990019D641 /* b2Rope.cpp */; };
+		F0B086371EDAF90B0019D641 /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B086361EDAF90B0019D641 /* MyScene.m */; };
+		F0B086481EDB09030019D641 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B086471EDB09030019D641 /* TargetViewController.m */; };
 		F0CFD9171ECAC3A500142705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9161ECAC3A500142705 /* main.m */; };
 		F0CFD91A1ECAC3A500142705 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9191ECAC3A500142705 /* AppDelegate.m */; };
 		F0CFD9221ECAC3A500142705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0CFD9211ECAC3A500142705 /* Assets.xcassets */; };
@@ -222,6 +224,10 @@
 		F0B086011EDAF3990019D641 /* b2WheelJoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2WheelJoint.h; sourceTree = "<group>"; };
 		F0B086031EDAF3990019D641 /* b2Rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2Rope.cpp; sourceTree = "<group>"; };
 		F0B086041EDAF3990019D641 /* b2Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2Rope.h; sourceTree = "<group>"; };
+		F0B086351EDAF90B0019D641 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		F0B086361EDAF90B0019D641 /* MyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		F0B086461EDB09030019D641 /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
+		F0B086471EDB09030019D641 /* TargetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TargetViewController.m; sourceTree = "<group>"; };
 		F0CFD9121ECAC3A500142705 /* GravityDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0CFD9161ECAC3A500142705 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F0CFD9181ECAC3A500142705 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -576,6 +582,10 @@
 				F0CFD9151ECAC3A500142705 /* Supporting Files */,
 				F0CFD92C1ECAC44D00142705 /* MainViewController.h */,
 				F0CFD92D1ECAC44D00142705 /* MainViewController.m */,
+				F0B086351EDAF90B0019D641 /* MyScene.h */,
+				F0B086361EDAF90B0019D641 /* MyScene.m */,
+				F0B086461EDB09030019D641 /* TargetViewController.h */,
+				F0B086471EDB09030019D641 /* TargetViewController.m */,
 			);
 			path = GravityDemo;
 			sourceTree = "<group>";
@@ -909,6 +919,7 @@
 				F0B0861D1EDAF3990019D641 /* b2ChainAndCircleContact.cpp in Sources */,
 				F0B086171EDAF3990019D641 /* b2Body.cpp in Sources */,
 				F0CFD9E21ECAD1D800142705 /* CCSpriteBatchNode.m in Sources */,
+				F0B086371EDAF90B0019D641 /* MyScene.m in Sources */,
 				F0B086311EDAF3990019D641 /* b2WheelJoint.cpp in Sources */,
 				F0CFD9DA1ECAD1D800142705 /* CCRenderTexture.m in Sources */,
 				F0B0862F1EDAF3990019D641 /* b2RopeJoint.cpp in Sources */,
@@ -922,6 +933,7 @@
 				F0CFD9EB1ECAD1D800142705 /* CCAppDelegate.m in Sources */,
 				F0B0861A1EDAF3990019D641 /* b2Island.cpp in Sources */,
 				F0CFD9FB1ECAD1D800142705 /* CCVertex.m in Sources */,
+				F0B086481EDB09030019D641 /* TargetViewController.m in Sources */,
 				F0B086181EDAF3990019D641 /* b2ContactManager.cpp in Sources */,
 				F0B0860F1EDAF3990019D641 /* b2EdgeShape.cpp in Sources */,
 				F0CFD91A1ECAC3A500142705 /* AppDelegate.m in Sources */,

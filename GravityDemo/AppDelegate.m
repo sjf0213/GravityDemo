@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "cocos2d.h"
+#import "MyScene.h"
 
 @interface AppDelegate ()
 
@@ -19,8 +21,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     MainViewController* viewController = [[MainViewController alloc] init];
-    [self.window setRootViewController:viewController];
+    UINavigationController* navi = [[UINavigationController alloc] initWithRootViewController:viewController];
+    [self.window setRootViewController:navi];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -7,6 +7,9 @@
 //
 
 #import "MainViewController.h"
+#import "CCDirectorIOS.h"
+#import "TargetViewController.h"
+#import "MyScene.h"
 
 @interface MainViewController ()
 
@@ -14,9 +17,18 @@
 
 @implementation MainViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor cyanColor];
+    
+    UIButton* btn = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    btn.backgroundColor =[UIColor yellowColor];
+    btn.center = self.view.center;
+    [self.view addSubview:btn];
+    [btn addTarget:self action:@selector(onTapBtn) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,6 +36,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)onTapBtn{
+    TargetViewController* target = [TargetViewController sharedDirector];
+    CCGLView* v = [CCGLView viewWithFrame:[UIScreen mainScreen].bounds];
+    [self setView:v];
+    [target runWithScene:[MyScene scene]];
+    [self.navigationController pushViewController:target animated:YES];
+}
 /*
 #pragma mark - Navigation
 
