@@ -18,7 +18,6 @@
 @implementation MainViewController
 
 
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -29,6 +28,8 @@
     btn.center = self.view.center;
     [self.view addSubview:btn];
     [btn addTarget:self action:@selector(onTapBtn) forControlEvents:UIControlEventTouchUpInside];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,6 +40,7 @@
 -(void)onTapBtn{
     TargetViewController* target = [TargetViewController sharedDirector];
     CCGLView* v = [CCGLView viewWithFrame:[UIScreen mainScreen].bounds];
+    v.backgroundColor = [UIColor yellowColor];
     [self setView:v];
     [target runWithScene:[MyScene scene]];
     [self.navigationController pushViewController:target animated:YES];
