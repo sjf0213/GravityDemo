@@ -54,6 +54,7 @@
 		F064C0D81EDC46540019C70E /* b2WeldJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F064C0A61EDC46540019C70E /* b2WeldJoint.cpp */; };
 		F064C0D91EDC46540019C70E /* b2WheelJoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F064C0A81EDC46540019C70E /* b2WheelJoint.cpp */; };
 		F064C0DA1EDC46540019C70E /* b2Rope.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F064C0AB1EDC46540019C70E /* b2Rope.cpp */; };
+		F086452B1EDDC09300BE227B /* header.png in Resources */ = {isa = PBXBuildFile; fileRef = F086452A1EDDC09300BE227B /* header.png */; };
 		F0B086371EDAF90B0019D641 /* MyScene.mm in Sources */ = {isa = PBXBuildFile; fileRef = F0B086361EDAF90B0019D641 /* MyScene.mm */; };
 		F0B086481EDB09030019D641 /* TargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F0B086471EDB09030019D641 /* TargetViewController.m */; };
 		F0CFD9171ECAC3A500142705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0CFD9161ECAC3A500142705 /* main.m */; };
@@ -229,6 +230,7 @@
 		F064C0AB1EDC46540019C70E /* b2Rope.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = b2Rope.cpp; sourceTree = "<group>"; };
 		F064C0AC1EDC46540019C70E /* b2Rope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = b2Rope.h; sourceTree = "<group>"; };
 		F064C0DB1EDC477A0019C70E /* Box2DExamples.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Box2DExamples.h; sourceTree = "<group>"; };
+		F086452A1EDDC09300BE227B /* header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header.png; sourceTree = "<group>"; };
 		F0B086351EDAF90B0019D641 /* MyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
 		F0B086361EDAF90B0019D641 /* MyScene.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyScene.mm; sourceTree = "<group>"; };
 		F0B086461EDB09030019D641 /* TargetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TargetViewController.h; sourceTree = "<group>"; };
@@ -580,6 +582,7 @@
 		F0CFD9141ECAC3A500142705 /* GravityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				F086452A1EDDC09300BE227B /* header.png */,
 				F064C0DB1EDC477A0019C70E /* Box2DExamples.h */,
 				F0CFD9181ECAC3A500142705 /* AppDelegate.h */,
 				F0CFD9191ECAC3A500142705 /* AppDelegate.m */,
@@ -856,6 +859,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F086452B1EDDC09300BE227B /* header.png in Resources */,
 				F0CFD9251ECAC3A500142705 /* LaunchScreen.storyboard in Resources */,
 				F0CFD9221ECAC3A500142705 /* Assets.xcassets in Resources */,
 			);

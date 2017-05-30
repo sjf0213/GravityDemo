@@ -50,6 +50,17 @@
     if (!self) return NULL;
     
     self.color = [CCColor colorWithRed:1.0 green:0 blue:0];
+    
+    // Header background
+    CCSprite9Slice* headerBg = [CCSprite9Slice spriteWithImageNamed:@"header.png"];
+    headerBg.positionType = CCPositionTypeMake(CCPositionUnitUIPoints, CCPositionUnitUIPoints, CCPositionReferenceCornerTopLeft);
+    headerBg.position = ccp(0,0);
+    headerBg.anchorPoint = ccp(0,1);
+    headerBg.contentSizeType = CCSizeTypeMake(CCSizeUnitNormalized, CCSizeUnitUIPoints);
+    headerBg.contentSize = CGSizeMake(1, 44);
+    
+    [self addChild:headerBg];
+    
     // Init the box2d world
     [self initWorld];
     
