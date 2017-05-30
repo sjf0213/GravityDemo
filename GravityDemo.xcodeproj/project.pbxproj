@@ -589,10 +589,10 @@
 				F0CFD9151ECAC3A500142705 /* Supporting Files */,
 				F0CFD92C1ECAC44D00142705 /* MainViewController.h */,
 				F0CFD92D1ECAC44D00142705 /* MainViewController.m */,
-				F0B086351EDAF90B0019D641 /* MyScene.h */,
-				F0B086361EDAF90B0019D641 /* MyScene.mm */,
 				F0B086461EDB09030019D641 /* TargetViewController.h */,
 				F0B086471EDB09030019D641 /* TargetViewController.m */,
+				F0B086351EDAF90B0019D641 /* MyScene.h */,
+				F0B086361EDAF90B0019D641 /* MyScene.mm */,
 			);
 			path = GravityDemo;
 			sourceTree = "<group>";

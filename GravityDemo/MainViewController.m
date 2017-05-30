@@ -41,7 +41,7 @@
     TargetViewController* target = [TargetViewController sharedDirector];
     CCGLView* v = [CCGLView viewWithFrame:[UIScreen mainScreen].bounds];
     v.backgroundColor = [UIColor yellowColor];
-    [self setView:v];
+    [target setView:v];
     [target runWithScene:[MyScene scene]];
     [self.navigationController pushViewController:target animated:YES];
 }
